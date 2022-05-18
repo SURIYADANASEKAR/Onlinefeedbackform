@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RIT-faculty feedback</title>
+    <link href="img/PicsArt_03-24-12.10.53.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #344a72;
+            color: #fff;
+            line-height: 1.8;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        #container {}
+        
+        .form-wrap {
+            background: #fff;
+            color: #333;
+        }
+        
+        .form-wrap h1,
+        .form-wrap p {
+            text-align: center;
+        }
+        
+        .form-wrap h2,
+        .form-wrap p {
+            text-align: center;
+        }
+        
+        .form-wrap .form-group {
+            margin-top: 15px;
+        }
+        
+        .form-wrap .form-group label {
+            display: block;
+            color: #666;
+        }
+        
+        .form-wrap .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: #ddd 1px solid;
+            border-radius: 5px;
+        }
+        
+        .form-wrap button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #49c1a2;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .form-wrap button:hover {
+            background: #37a08e
+        }
+        
+        .form-wrap .bottom-text {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        footer a {
+            color: #49c1a2
+        }
+        
+        a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="col-md-8 mx-auto">
+        <div class="form-wrap mt-5 ml-2">
+            <h1>RIT</h1>
+            <p>Online faculty feedback</p>
+            <h2>Start submitting feedback</h2>
+            <form class="m-3" method="POST" action="insert.php">
+                <div class="form-group">
+                    <label for="first-name">Student Name</label>
+                    <input type="text" name="firstName" id="first-name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Student Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="last-name">Faculty name Name</label>
+                        <input type="text" name="lastName" id="last-name" />
+                    </div>
+                    <!-- Radio -->
+                    <fieldset>
+                        <label for="membership">Faculty subject knowledge</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" value="good" id=" flexRadioDefault1 ">
+                            <label class="form-check-label " for="flexRadioDefault1 ">
+                  good
+                </label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio" name="flexRadioDefault" value="poor" id="flexRadioDefault2 " checked>
+                            <label class="form-check-label " for="flexRadioDefault2 ">
+                  poor
+                </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="membership ">Faculty interaction in class</label>
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio" value="good" name="class" id="jeswanth ">
+                            <label class="form-check-label " for="jeswanth ">
+                 good 
+                </label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio" name="class" value="poor" id=" ruhit " checked>
+                            <label class="form-check-label " for="ruhit ">
+                  poor
+                </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="membership ">Faculty usage of time</label>
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio" name="time" value="good ">
+                            <label class=" form-check-label " for="jeswanth ">
+                     good 
+                    </label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio" name="time" value="poor " id="ruhit " checked>
+                            <label class="form-check-label " for="ruhit">
+                      poor
+                    </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-floating ">
+                        <label for="floatingTextarea ">Feedback</label>
+                        <textarea class="form-control " placeholder="Leave your feedback here " name="feedback" id="floatingTextarea "></textarea>
+                    </div>
+                </div>
+
+                <button type="submit " class="btn ">Submit</button>
+            </form>>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
